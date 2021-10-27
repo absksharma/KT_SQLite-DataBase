@@ -27,7 +27,6 @@ object TodoTable {
         row.put(Colums.DONE, toDo.Task)
 
         db.insert(TABLE_NAME, null, row)
-
     }
 
     fun getAllTodos(db: SQLiteDatabase) {
@@ -46,5 +45,4 @@ object TodoTable {
             todos.add(todo)
         }
     }
-
 }
